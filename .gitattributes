@@ -1,0 +1,47 @@
+# ==========================================================================
+# 课表 · .gitattributes
+# 统一换行符，避免 Windows / macOS / Linux 协作时整文件 diff。
+# ==========================================================================
+
+# 默认：文本文件在仓库内统一存为 LF
+* text=auto eol=lf
+
+# ---------- 必须在 Windows 上用 CRLF 的脚本 ----------
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# ---------- 必须保持 LF（否则在 Linux/macOS 上无法执行）----------
+gradlew         text eol=lf
+*.sh            text eol=lf
+
+# ---------- 源码与配置 ----------
+*.kt            text eol=lf
+*.kts           text eol=lf
+*.java          text eol=lf
+*.xml           text eol=lf
+*.md            text eol=lf
+*.toml          text eol=lf
+*.properties    text eol=lf
+*.pro           text eol=lf
+*.json          text eol=lf
+*.yml           text eol=lf
+*.yaml          text eol=lf
+
+# ---------- 二进制（避免 Git 试图合并/统计文本行）----------
+*.jar   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ico   binary
+*.xls   binary
+*.xlsx  binary
+*.zip   binary
+*.keystore binary
+*.jks   binary
+
+# ---------- 让 GitHub 语言统计识别正确 ----------
+*.kt    linguist-language=Kotlin
+*.kts   linguist-language=Kotlin
+gradlew linguist-vendored=false

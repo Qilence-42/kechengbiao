@@ -1,0 +1,12 @@
+# ---------------------------------------------------------------------------
+# 本机 Android SDK 路径（由 Android Studio 自动生成，不要提交到仓库）
+#
+# 使用方法：
+#   1. 复制本文件为 local.properties
+#   2. 把 sdk.dir 改成你自己机器上的 Android SDK 路径
+#
+# Windows 注意：路径中的反斜杠要转义成 \\ 或改用 /，例如
+#   sdk.dir=C\:\\Users\\你的用户名\\AppData\\Local\\Android\\Sdk
+#   sdk.dir=C:/Users/你的用户名/AppData/Local/Android/Sdk
+# ---------------------------------------------------------------------------
+sdk.dir=C\:\\Users\\YOUR_NAME\\AppData\\Local\\Android\\Sdk

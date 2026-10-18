@@ -1,0 +1,79 @@
+# ==========================================================================
+# 课表 · .gitignore
+# 只提交源码与文档；以下都是「可在本地重新生成」的内容。
+# ==========================================================================
+
+# ---------- 构建产物 ----------
+build/
+app/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output/
+release/
+
+# 本地打包出来的 APK（发布请挂到 GitHub Release，而不是提交进仓库）
+dist/
+
+# ---------- Gradle ----------
+.gradle/
+.gradle-home/
+gradle-app.setting
+.gradletasknamecache
+
+# ---------- 本机配置（含绝对路径，绝不能提交）----------
+local.properties
+!local.properties.example
+
+# ---------- Kotlin / KSP / 注解处理 ----------
+.kotlin/
+kspCaches/
+ksp/
+build/generated/
+captures/
+*.hprof
+
+# ---------- Android ----------
+.android-home/
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+lint-results*.html
+lint-results*.xml
+
+# ---------- IDE ----------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+.externalNativeBuild/
+.cxx/
+
+# ---------- 系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+*.swp
+
+# ---------- 日志 / 临时文件 ----------
+*.log
+*.tmp
+*.bak
+.gradle-local/
+
+# ---------- 原始教务导出文件（含真实学号/姓名；仓库只保留已脱敏的 samples/）----------
+课表示例/
+
+# ---------- Python 工具产生的缓存 ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
